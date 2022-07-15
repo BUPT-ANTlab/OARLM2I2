@@ -1,0 +1,15 @@
+<configuration>
+    <input>
+        <net-file value="3x3Grid.net.xml"/>
+        <route-files value="3x3Grid.rou.xml"/>
+
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="100000"/>
+    </time>
+ <output>
+        <summary-output value="output_sumo.xml"/>
+ </output>
+
+</configuration>

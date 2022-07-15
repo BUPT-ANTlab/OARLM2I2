@@ -1,0 +1,22 @@
+<routes>
+    <vType id="type1" accel="0.8" decel="4.5" sigma="0.5" length="5" maxSpeed="70"/>
+    <!-- Pursuit -->
+    <route id="route0" color="1,1,0" edges="E0 E1"/>
+    <route id="route1" color="1,1,0" edges="E9 E13"/>
+    <route id="route2" color="1,1,0" edges="E11 E23"/>
+    <route id="route3" color="1,1,0" edges="E17 E28"/>
+    <!-- Evader -->
+    <route id="route4" color="0,1,0" edges="-E15 -E14"/>
+    <route id="route5" color="0,1,0" edges="-E26 -E24"/>
+
+    <flow id="Background" from="E13" to="E30" begin="0" end="100" departSpeed="max" number="50"/>
+    <!-- Pursuit -->
+    <vehicle id="p0" type="type1" route="route1" depart="100" color="1,0,0"/>
+    <vehicle id="p1" type="type1" route="route1" depart="100" color="1,0,0"/>
+    <vehicle id="p2" type="type1" route="route2" depart="100" color="1,0,0"/>
+    <vehicle id="p3" type="type1" route="route2" depart="100" color="1,0,0"/>
+    <!-- Evader -->
+    <vehicle id="e0" type="type1" route="route4" depart="100" color="0,0,1"/>
+    <vehicle id="e1" type="type1" route="route5" depart="100" color="0,0,1"/>
+
+</routes>
